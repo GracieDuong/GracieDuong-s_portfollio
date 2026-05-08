@@ -669,3 +669,58 @@ a {
 .about-image {
   border-radius: 28px;
 }
+/* Phu Quach-inspired Tech Stack */
+.tech-stack {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.tech-row {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+
+.tech-title {
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(255, 122, 0, 0.08);
+  border: 1px solid rgba(255, 122, 0, 0.22);
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1;
+}
+
+.tech-tags span:hover {
+  color: #ffffff;
+  border-color: rgba(255, 122, 0, 0.45);
+  background: rgba(255, 122, 0, 0.14);
+}
+
+@media (max-width: 760px) {
+  .tech-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
