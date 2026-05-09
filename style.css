@@ -724,3 +724,56 @@ a {
     gap: 12px;
   }
 }
+/* Phu Quach-inspired Experience */
+.experience-list {
+  border-top: 1px solid var(--line);
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-time {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.experience-type {
+  color: var(--muted-2);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.experience-content h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.experience-role {
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.experience-content p:last-child {
+  color: var(--muted);
+  max-width: 820px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 26px 0;
+  }
+}
