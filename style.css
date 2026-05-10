@@ -660,7 +660,7 @@ a {
   }
 
   .about-image {
-    order: -1; /* ảnh lên trên */
+    order: -1; 
   }
 }
 .about-grid {
@@ -724,7 +724,6 @@ a {
     gap: 12px;
   }
 }
-/* Phu Quach-inspired Experience */
 .experience-list {
   border-top: 1px solid var(--line);
 }
@@ -775,5 +774,178 @@ a {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 26px 0;
+  }
+}
+/* =========================
+   Mobile Responsive Fix
+========================= */
+
+@media (max-width: 900px) {
+  .container {
+    width: min(100% - 28px, var(--max-width));
+  }
+
+  .hero-grid,
+  .about-grid,
+  .projects-grid,
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-side {
+    order: -1;
+  }
+
+  .portrait-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .section-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    line-height: 1.6;
+  }
+
+  .nav {
+    min-height: 64px;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 14px;
+    left: 14px;
+    padding: 16px;
+    background: #111111;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 100;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+
+  .hero {
+    padding-top: 42px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+  }
+
+  .lead {
+    font-size: 0.98rem;
+  }
+
+  .section-head h2,
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-card,
+  .text-card,
+  .timeline-item,
+  .project-card,
+  .stack-item,
+  .blog-item,
+  .cv-box {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .experience-item,
+  .tech-row,
+  .stack-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-links,
+  .socials,
+  .cv-actions {
+    flex-wrap: wrap;
+  }
+
+  .status-badge {
+    width: fit-content;
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 22px, var(--max-width));
+  }
+
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .section-card {
+    padding: 18px;
+  }
+
+  .project-card,
+  .timeline-item,
+  .stack-item,
+  .cv-box {
+    padding: 18px;
+  }
+
+  .tech-tags {
+    gap: 8px;
+  }
+
+  .tech-tags span,
+  .tech-tags a {
+    font-size: 0.84rem;
+    padding: 7px 11px;
+  }
+
+  .to-top {
+    right: 14px;
+    bottom: 14px;
   }
 }
