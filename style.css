@@ -796,13 +796,13 @@ a {
     order: -1;
   }
 
+  .section-card {
+    padding: 28px;
+  }
+  
   .portrait-card {
     max-width: 360px;
     margin: 0 auto;
-  }
-
-  .section-card {
-    padding: 28px;
   }
 }
 
