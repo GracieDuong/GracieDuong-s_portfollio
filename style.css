@@ -779,7 +779,7 @@ a {
 /* Case Study Pages */
 .case-hero {
   padding: 110px 0 70px;
-  background: #ffffff;
+  background: #rgba(5, 5, 5, 0.92);
 }
 
 .case-title {
@@ -800,7 +800,7 @@ a {
 
 .case-section {
   padding: 70px 0;
-  background: #ffffff;
+  background: #rgba(5, 5, 5, 0.92);
 }
 
 .case-section .container {
