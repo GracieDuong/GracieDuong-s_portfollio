@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>TravelHelper Case Study | Giao Duong</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">Giao Duong</a>
+
+    <nav class="menu">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#cv">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="case-hero">
+
+    <div class="case-hero-image">
+      <img src="../img/travelhelper-cover.jpg" alt="TravelHelper Cover">
+    </div>
+
+    <div class="container">
+
+      <p class="eyebrow">
+        PRODUCT THINKING · UX · BUSINESS ANALYSIS
+      </p>
+
+      <h1 class="case-title">
+        TravelHelper — AI Chatbot for Travel Decision Support
+      </h1>
+
+      <p class="case-lead">
+        Designed an AI-assisted travel booking experience that reduces
+        decision friction through conversational guidance,
+        recommendation flows, and human fallback support.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- QUICK INFO -->
+  <section class="case-section">
+    <div class="container">
+
+      <div class="info-grid">
+
+        <div class="info-card">
+          <span>Role</span>
+          <h3>Product / Business Analysis</h3>
+        </div>
+
+        <div class="info-card">
+          <span>Timeline</span>
+          <h3>4 weeks</h3>
+        </div>
+
+        <div class="info-card">
+          <span>Tools</span>
+          <h3>Figma, Miro</h3>
+        </div>
+
+        <div class="info-card">
+          <span>Focus</span>
+          <h3>Conversational UX, BPMN, Service Design</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS PROBLEM -->
+  <section class="case-section">
+    <div class="container">
+
+      <h2>Business Problem</h2>
+
+      <div class="case-text">
+
+        <p>
+          Most travel booking platforms I’ve used have the same problem:
+          too many filters, too many tabs, too many choices thrown at you at once.
+        </p>
+
+        <p>
+          That leads to:
+        </p>
+
+        <ul class="case-list">
+          <li>People spending 20–30 minutes just comparing flights</li>
+          <li>Opening 5–6 tabs for hotels, visa, weather, transport</li>
+          <li>Getting stuck when something unexpected happens</li>
+          <li>Waiting hours for support to reply</li>
+        </ul>
+
+        <p>
+          The business impact isn’t subtle:
+          booking abandonment, decision fatigue,
+          and unnecessary support tickets.
+        </p>
+
+        <p>
+          I didn’t want to build another booking form.
+          I wanted to build something that actually helps people decide.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- USER PAIN POINTS -->
+  <section class="case-section">
+    <div class="container">
+
+      <h2>User Pain Points</h2>
+
+      <div class="pain-grid">
+
+        <div class="pain-card">
+          <div class="pain-icon">😵</div>
+
+          <h3>Decision Fatigue</h3>
+
+          <p>
+            Users face too many travel options and struggle to compare information efficiently.
+          </p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">⏱</div>
+
+          <h3>Time-Consuming Planning</h3>
+
+          <p>
+            Searching flights, hotels, visas, and weather separately creates friction.
+          </p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">❓</div>
+
+          <h3>Support Frustration</h3>
+
+          <p>
+            Users become frustrated when systems cannot handle unclear requests or exceptions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ANALYSIS TABLE -->
+  <section class="case-section">
+    <div class="container">
+
+      <h2>Problem Breakdown</h2>
+
+      <p class="table-intro">
+        Beyond the surface-level pain points, I broke down each user problem into:
+        how it actually affects the experience and what product response I built to solve it.
+      </p>
+
+      <div class="table-wrapper">
+
+        <table class="case-table">
+
+          <thead>
+            <tr>
+              <th>User / Business Problem</th>
+              <th>Impact on Experience</th>
+              <th>Product / Service Response</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Users feel overwhelmed by too many travel options</td>
+              <td>Decision fatigue and slower booking decisions</td>
+              <td>Guided conversational prompts</td>
+            </tr>
+
+            <tr>
+              <td>Unclear or incomplete inputs</td>
+              <td>User frustration and drop-off risk</td>
+              <td>Validation and re-prompt flow</td>
+            </tr>
+
+            <tr>
+              <td>Payment failures during checkout</td>
+              <td>Booking abandonment</td>
+              <td>Retry logic + alternative method suggestion</td>
+            </tr>
+
+            <tr>
+              <td>Lack of personalized recommendations</td>
+              <td>Lower engagement and conversion</td>
+              <td>Recommendation-based filtering</td>
+            </tr>
+
+            <tr>
+              <td>Users require support beyond chatbot capability</td>
+              <td>Increased operational friction</td>
+              <td>Human handover workflow</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT THINKING -->
+  <section class="case-section">
+    <div class="container">
+
+      <h2>Product Thinking</h2>
+
+      <div class="case-text">
+
+        <h3>Product Goal</h3>
+
+        <ul class="case-list">
+          <li>simplify travel planning</li>
+          <li>reduce cognitive overload</li>
+          <li>guide users through booking decisions</li>
+          <li>provide support escalation when needed</li>
+        </ul>
+
+        <h3>Product Hypothesis</h3>
+
+        <p>
+          If users receive guided recommendations through conversational interaction,
+          they will make travel decisions faster and with greater confidence —
+          without feeling like they’re “working” to book a trip.
+        </p>
+
+        <p>
+          I didn’t just want a chatbot.
+          I wanted a decision-support system disguised as a conversation.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
