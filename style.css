@@ -184,7 +184,7 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
   font-weight: 800;
@@ -259,8 +259,10 @@ a {
 }
 
 .section-head h2 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  line-height: 1.1;
   letter-spacing: -0.03em;
+  font-weight: 700;
 }
 
 .content-grid.two-col {
@@ -784,7 +786,7 @@ a {
 
 .case-title {
   max-width: 1000px;
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   line-height: 1.05;
   letter-spacing: -0.05em;
   margin-bottom: 24px;
@@ -808,9 +810,12 @@ a {
 }
 
 .case-section h2 {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  margin-bottom: 24px;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  margin-bottom: 22px;
   color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 700;
 }
 
 .case-section p {
@@ -1149,7 +1154,7 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(2.4rem, 12vw, 4rem);
+    font-size: clamp(2rem, 5vw, 3.8rem);
     line-height: 1.02;
     letter-spacing: -0.05em;
   }
@@ -1158,11 +1163,9 @@ a {
     font-size: 0.98rem;
   }
 
-  .section-head h2,
-.section-title {
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+ .section-head h2,
+  .section-title {
+    font-size: 2rem;
   }
 
   .section-card,
