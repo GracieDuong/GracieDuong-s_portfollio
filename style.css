@@ -1159,8 +1159,10 @@ a {
   }
 
   .section-head h2,
-  .section-title {
-    font-size: 2rem;
+.section-title {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   }
 
   .section-card,
