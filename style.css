@@ -1015,6 +1015,65 @@ a {
 .bpmn-content img {
   border-radius: 20px;
 }
+
+
+.figma-main-dropdown {
+  margin-top: 36px;
+  border-radius: 22px;
+  overflow: hidden;
+
+  background:
+    linear-gradient(#111111, #111111) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(255,122,0,0.5),
+      rgba(255,255,255,0.06)
+    ) border-box;
+
+  border: 1px solid transparent;
+}
+
+/* Header */
+.figma-main-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 22px 26px;
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+
+  transition: 0.3s ease;
+}
+
+/* Remove default arrow */
+.figma-main-dropdown:-webkit-details-marker {
+  display: none;
+}
+
+/* Hover */
+.figma-main-dropdown:hover {
+  background: rgba(255,122,0,0.05);
+}
+
+/* Small text */
+.figma-main-dropdown summary span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Open state */
+.figma-main-dropdown[open] summary {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
 /* =========================
    Mobile Responsive Fix
 ========================= */
