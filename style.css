@@ -1081,6 +1081,80 @@ font-weight: 400;
 .figma-main-dropdown[open] summary {
 border-bottom: 1px solid rgba(255,255,255,0.06);
 }
+/* O&F Retail Case Study */
+.finding-block {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 28px;
+  align-items: center;
+  padding: 34px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.finding-block:first-of-type {
+  padding-top: 10px;
+}
+
+.finding-content h3 {
+  color: #ffffff;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+
+.business-impact {
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.business-impact strong {
+  color: var(--accent);
+}
+
+.finding-image {
+  margin-top: 0;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.recommendation-card {
+  padding: 24px;
+  border-radius: 20px;
+  background:
+    linear-gradient(#111111, #111111) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(255,122,0,0.5),
+      rgba(255,255,255,0.06)
+    ) border-box;
+  border: 1px solid transparent;
+}
+
+.recommendation-card span {
+  display: block;
+  color: var(--accent);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+
+.recommendation-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .finding-block,
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* =========================
   Mobile Responsive Fix
 ========================= */
