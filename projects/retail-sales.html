@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Retail Sales Case Study | Giao Duong</title>
+
+  <title>O&F Retail Case Study | Giao Duong</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,111 +23,227 @@
 
       <nav class="menu">
         <a href="../index.html#about">About</a>
-        <a href="../index.html#experience">Experience</a>
-        <a href="../index.html#Featured Works">Featured Works</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#projects">Featured Works</a>
         <a href="../index.html#cv">CV</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="case-hero">
       <div class="container">
-        <p class="eyebrow">PYTHON · TABLEAU · CUSTOMER ANALYTICS</p>
+        <p class="eyebrow">PYTHON · SQL · TABLEAU · EXCEL</p>
 
         <h1 class="case-title">
-          Retail Sales & Customer Segmentation Analysis
+          O&F Retail Case Study
         </h1>
 
         <p class="case-lead">
-          An end-to-end analytics case study focused on sales performance,
-          discount impact, customer value, and operational efficiency.
+          Sales Performance, Customer Segmentation & Operational Analysis
         </p>
+
+        <div class="case-text">
+          <p>
+            An end-to-end analytics case study exploring how discount strategy,
+            customer segmentation, and fulfillment operations impacted profitability
+            and long-term customer value.
+          </p>
+        </div>
 
         <div class="project-links">
-          <a href="https://public.tableau.com/app/profile/nguyen.quynh.giao.duong/viz/OFRetailPerformanceCustomerInsights/Story1#1">View Dashboard</a>
+          <a href="#">View Dashboard</a>
           <a href="#">GitHub Repository</a>
-          <a href="../index.html#Featured Works">Back to Portfolio</a>
+          <a href="../index.html#projects">Back to Portfolio</a>
         </div>
       </div>
     </section>
 
+    <!-- BUSINESS CONTEXT -->
     <section class="case-section">
       <div class="container">
-        <h2>Goal</h2>
-        <p>
-          The goal of this project was to understand sales performance,
-          identify high-value customers, evaluate discount impact, and provide
-          actionable recommendations for business improvement.
-        </p>
-      </div>
-    </section>
+        <h2>Business Context</h2>
 
-    <section class="case-section">
-      <div class="container">
-        <h2>Background Information</h2>
-        <p>
-          The dataset includes customer orders, sales, profit, discounts,
-          delivery performance, and customer-level information. The analysis
-          focused on understanding what drives revenue, margin, and customer value.
-        </p>
-      </div>
-    </section>
+        <div class="case-text">
+          <p>
+            O&F is a retail company operating across North Asia, Oceania,
+            and Southeast Asia.
+          </p>
 
-    <section class="case-section">
-      <div class="container">
-        <h2>Process</h2>
+          <p>
+            Although the business showed strong revenue growth and expanding
+            market activity, deeper analysis revealed operational inefficiencies
+            affecting profitability, customer experience, and retention.
+          </p>
 
-        <div class="case-grid">
-          <div class="case-card">
-            <h3>1. Data Cleaning</h3>
-            <p>
-              Cleaned missing values, standardized fields, checked duplicates,
-              and prepared the dataset for analysis.
-            </p>
-          </div>
+          <p>
+            This project approached the business as a connected system:
+          </p>
 
-          <div class="case-card">
-            <h3>2. Customer Segmentation</h3>
-            <p>
-              Created RFM segmentation to identify high-value, loyal, at-risk,
-              and low-engagement customer groups.
-            </p>
-          </div>
+          <p>
+            <strong>Customer → Purchase → Discount → Delivery → Profit → Retention</strong>
+          </p>
+        </div>
 
-          <div class="case-card">
-            <h3>3. Dashboarding</h3>
-            <p>
-              Built Tableau dashboards to visualize sales performance,
-              discount impact, customer segments, and fulfillment efficiency.
-            </p>
-          </div>
+        <div class="case-image-block">
+          <img
+            src="../img/of-dashboard-overview.jpg"
+            alt="O&F Retail dashboard overview"
+          />
         </div>
       </div>
     </section>
 
+    <!-- KEY FINDINGS -->
     <section class="case-section">
       <div class="container">
-        <h2>Key Insights</h2>
+        <h2>Key Findings</h2>
 
-        <ul class="case-list">
-          <li>High discounting reduced profitability in several product groups.</li>
-          <li>Repeat customers contributed strongly to overall sales value.</li>
-          <li>Delivery delays created operational friction and potential churn risk.</li>
-          <li>Customer segmentation helped identify groups for targeted retention.</li>
-        </ul>
+        <!-- FINDING 1 -->
+        <article class="finding-block">
+          <div class="finding-content">
+            <p class="eyebrow">Finding 01</p>
+            <h3>Revenue Growth Was Eroding Profitability</h3>
+
+            <ul class="case-list">
+              <li>Products discounted above 40% frequently generated negative profit</li>
+              <li>Some transactions recorded losses up to -$2.7K</li>
+              <li>Revenue growth relied heavily on discount-driven sales</li>
+            </ul>
+
+            <p class="business-impact">
+              <strong>Business Impact:</strong>
+              The business was optimizing for revenue growth rather than
+              sustainable profitability.
+            </p>
+          </div>
+
+          <div class="case-image-block finding-image">
+            <img
+              src="../img/of-discount-profit.jpg"
+              alt="Discount and profit analysis chart"
+            />
+          </div>
+        </article>
+
+        <!-- FINDING 2 -->
+        <article class="finding-block">
+          <div class="finding-content">
+            <p class="eyebrow">Finding 02</p>
+            <h3>Customer Segmentation Was Underutilized</h3>
+
+            <ul class="case-list">
+              <li>“Others” generated the highest revenue contribution at around $1.12M</li>
+              <li>High-value “Champion” customers were underutilized</li>
+              <li>Customer segments were not integrated into business decisions</li>
+            </ul>
+
+            <p class="business-impact">
+              <strong>Business Impact:</strong>
+              High-value customers were treated similarly to lower-value segments,
+              limiting retention and upsell opportunities.
+            </p>
+          </div>
+
+          <div class="case-image-block finding-image">
+            <img
+              src="../img/of-rfm-dashboard.jpg"
+              alt="RFM customer segmentation dashboard"
+            />
+          </div>
+        </article>
+
+        <!-- FINDING 3 -->
+        <article class="finding-block">
+          <div class="finding-content">
+            <p class="eyebrow">Finding 03</p>
+            <h3>Delivery Performance Was Weakening Customer Experience</h3>
+
+            <ul class="case-list">
+              <li>Late order rates reached 35–45%</li>
+              <li>Southeast Asia experienced the highest delays</li>
+              <li>Standard shipping consistently underperformed</li>
+            </ul>
+
+            <p class="business-impact">
+              <strong>Business Impact:</strong>
+              Operational efficiency was prioritized over customer experience,
+              increasing retention risk for valuable customers.
+            </p>
+          </div>
+
+          <div class="case-image-block finding-image">
+            <img
+              src="../img/of-fulfillment-dashboard.jpg"
+              alt="Fulfillment and delivery performance dashboard"
+            />
+          </div>
+        </article>
       </div>
     </section>
 
+    <!-- RECOMMENDATIONS -->
     <section class="case-section">
       <div class="container">
         <h2>Recommendations</h2>
 
-        <p>
-          The business should monitor discount usage more carefully, prioritize
-          high-value customer retention, and improve fulfillment processes for
-          delayed orders.
-        </p>
+        <div class="recommendation-grid">
+          <div class="recommendation-card">
+            <span>Pricing</span>
+            <p>
+              Introduce discount thresholds and track profit-per-order.
+            </p>
+          </div>
+
+          <div class="recommendation-card">
+            <span>Customer Strategy</span>
+            <p>
+              Prioritize loyalty and upsell campaigns for high-value segments.
+            </p>
+          </div>
+
+          <div class="recommendation-card">
+            <span>Operations</span>
+            <p>
+              Introduce priority shipping and optimize Southeast Asia logistics.
+            </p>
+          </div>
+
+          <div class="recommendation-card">
+            <span>Retention</span>
+            <p>
+              Develop lifecycle-based engagement and re-engagement campaigns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL INSIGHT -->
+    <section class="case-section">
+      <div class="container">
+        <h2>Final Insight</h2>
+
+        <div class="case-text">
+          <p>
+            The core issue was not weak sales performance.
+          </p>
+
+          <p>
+            The business was growing, but the system behind that growth was not
+            optimized for long-term profitability or customer value.
+          </p>
+
+          <p>
+            This project focused on identifying operational trade-offs, root causes,
+            and strategic opportunities through a product and business analysis mindset.
+          </p>
+        </div>
+
+        <div class="back-link">
+          <a href="../index.html#projects">← Back to Portfolio</a>
+        </div>
       </div>
     </section>
   </main>
